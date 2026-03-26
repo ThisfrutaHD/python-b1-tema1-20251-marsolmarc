@@ -50,4 +50,4 @@ def fibonacci(fibonacci_number: int):
             b, a = a, a+b
         return b
 
-#print(fibonacci(10))
+print(fibonacci(10))
