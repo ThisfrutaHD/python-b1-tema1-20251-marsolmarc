@@ -20,19 +20,19 @@ Exemple:
 
 '''
 
-def fibonacci_recursiu(fibonacci_number: int) -> int: #type hint
-   
-    if not isinstance(fibonacci_number, int):
-        raise ValueError("El nombre ha de ser de tipus int")
-    elif fibonacci_number < 0: #Valor numeric i superior a 0
-        raise ValueError("El nombre ha de ser superior a 0")
-    else:
-        if fibonacci_number == 0: #cas base
-            return 0
-        elif fibonacci_number == 1: #cas base
-            return 1
-        else:
-            return fibonacci_recursiu(fibonacci_number-1) + fibonacci_recursiu(fibonacci_number-2)
+#def fibonacci_recursiu(fibonacci_number: int) -> int: #type hint
+#   
+#    if not isinstance(fibonacci_number, int):
+#        raise ValueError("El nombre ha de ser de tipus int")
+#    elif fibonacci_number < 0: #Valor numeric i superior a 0
+#        raise ValueError("El nombre ha de ser superior a 0")
+#    else:
+#        if fibonacci_number == 0: #cas base
+#            return 0
+#        elif fibonacci_number == 1: #cas base
+#            return 1
+#        else:
+#            return fibonacci_recursiu(fibonacci_number-1) + fibonacci_recursiu(fibonacci_number-2)
         
 # Si quieres probar tu código, descomenta las siguientes líneas y ejecuta el script 
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
