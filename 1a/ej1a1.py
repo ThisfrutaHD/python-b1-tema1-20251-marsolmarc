@@ -38,7 +38,7 @@ Exemple:
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
 #print(fibonacci_recursiu(6))
 
-def fibonacci_iteratiu(fibonacci_number: int):
+def fibonacci(fibonacci_number: int):
 
     if not isinstance(fibonacci_number, int):
         raise ValueError("El nombre ha de ser de tipus int")
