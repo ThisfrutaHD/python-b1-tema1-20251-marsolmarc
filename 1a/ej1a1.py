@@ -27,9 +27,9 @@ def fibonacci_recursiu(fibonacci_number: int) -> int: #type hint
     elif fibonacci_number < 0: #Valor numeric i superior a 0
         raise ValueError("El nombre ha de ser superior a 0")
     else:
-        if fibonacci_number == 0:
+        if fibonacci_number == 0: #cas base
             return 0
-        elif fibonacci_number == 1:
+        elif fibonacci_number == 1: #cas base
             return 1
         else:
             return fibonacci_recursiu(fibonacci_number-1) + fibonacci_recursiu(fibonacci_number-2)
@@ -38,11 +38,16 @@ def fibonacci_recursiu(fibonacci_number: int) -> int: #type hint
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
 #print(fibonacci_recursiu(6))
 
-def fibonacci_iteratiu(fibonacci_number:int):
+def fibonacci_iteratiu(fibonacci_number: int):
 
     if not isinstance(fibonacci_number, int):
         raise ValueError("El nombre ha de ser de tipus int")
     elif fibonacci_number < 0: #Valor numeric i superior a 0
         raise ValueError("El nombre ha de ser superior a 0")
     else:
-        pass
+        a, b = 0, 1
+        for i in range(fibonacci_number):
+            a, b = b, a+b
+        return a
+
+#print(fibonacci_iteratiu(10))
