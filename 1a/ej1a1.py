@@ -45,9 +45,9 @@ def fibonacci(fibonacci_number: int):
     elif fibonacci_number < 0: #Valor numeric i superior a 0
         raise ValueError("El nombre ha de ser superior a 0")
     else:
-        a, b = 0, 1
+        b, a = 0, 1
         for i in range(fibonacci_number):
-            a, b = b, a+b
-        return a
+            b, a = a, a+b
+        return b
 
-#print(fibonacci_iteratiu(10))
+print(fibonacci(10))
