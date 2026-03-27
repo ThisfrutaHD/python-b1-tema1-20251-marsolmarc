@@ -35,7 +35,7 @@ import math as m
 
 def calculate_angle(angle):
     sinus = m.sin(m.radians(angle))
-    return sinus
+    return round(sinus, 2)
     
 
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
