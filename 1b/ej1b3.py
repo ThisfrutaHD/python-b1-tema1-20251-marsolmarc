@@ -32,7 +32,6 @@ def line_graph(x, y):
     plt.xlabel("x")
     plt.ylabel("y")
     plt.grid(True)
-    return plt.show()
 
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
 line_graph([1, 2, 3, 4, 5], [2, 4, 6, 8, 10])
