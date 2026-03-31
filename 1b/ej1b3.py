@@ -27,8 +27,12 @@ import matplotlib.pyplot as plt
 
 # Aquesta funció haurà de configurar la gràfica en la variable plt
 def line_graph(x, y):
-    # Write here your code
-    pass
+    plt.plot(x, y)
+    plt.title("Graph")
+    plt.xlabel("x")
+    plt.ylabel("y")
+    plt.grid(True)
+    return plt.show()
 
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
-# line_graph([1, 2, 3, 4, 5], [2, 4, 6, 8, 10])
+line_graph([1, 2, 3, 4, 5], [2, 4, 6, 8, 10])
