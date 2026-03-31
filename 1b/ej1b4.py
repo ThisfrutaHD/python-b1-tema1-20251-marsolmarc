@@ -35,8 +35,11 @@ Exemple:
 import numpy as np
 
 def results(list_numbers):
-    # Write here your code
-    pass
+    mitjana = np.mean(list_numbers)
+    desviacio = np.std(list_numbers)
+    print("Mitjana: ", round(mitjana, 2))
+    print("Desviacio estandard: ", round(desviacio, 2))
+    return mitjana, desviacio
 
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
-# results([1, 2, 10, -5, 0, 9.55, 74.825, 55, 8, 42])
+results([1, 2, 10, -5, 0, 9.55, 74.825, 55, 8, 42])
