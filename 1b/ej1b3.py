@@ -29,8 +29,8 @@ import matplotlib.pyplot as plt
 def line_graph(x, y):
     plt.plot(x, y)
     plt.title("Graph")
-    plt.xlabel("x")
-    plt.ylabel("y")
+    plt.xlabel("Axis X")
+    plt.ylabel("Axis Y")
     plt.grid(True)
 
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
