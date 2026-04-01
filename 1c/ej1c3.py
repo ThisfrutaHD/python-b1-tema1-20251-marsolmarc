@@ -20,10 +20,12 @@ Exemple:
 
 
 def find_max(lst):
-    # Write here your code
-    pass
+    if len(lst) == 1: #Cas Base
+        return lst[0]
+    else:
+        return max(lst[0], find_max(lst[1:]))
 
 
 # Si vols provar el teu codi, descomenta les línies següents i executa l'script
-# numbers_list = [1, 5, 2, 7, 3]
-# print(find_max(numbers_list))
+numbers_list = [1, 5, 2, 7, 3, 25]
+print(find_max(numbers_list))
